@@ -260,11 +260,13 @@ a:hover, a:active, a:visited, a:focus {
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------Start_Manage_Account_Details-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
+section.mad-delivery .mad-delivery-text p {width: 570px;}
+section.mad-delivery .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
+section.mad-delivery .mad-or p {margin-bottom: 0;}
+.mad-btn-custom {padding: 10px; background-color: #026d97;}
+.mad-width {width: 70%;margin: auto;}
 
-
-
-
-
+section.account-changes {background-color: #f7f7f7;}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------End_Manage_Account_Details-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
