@@ -4,7 +4,7 @@
     src: url("../fonts/CharlesModern-Regular.eot?") format("eot"), url("../fonts/CharlesModern-Regular.woff") format("woff"), url("../fonts/CharlesModern-Regular.ttf") format("truetype"), url("../fonts/CharlesModern-Regular.svg#CharlesModern-Regular") format("svg"); }
   
   body {
-    background: #F2F2F2;
+    background: #fff;
     text-align: left;
     font-family: Arial, sans-serif;
     -webkit-overflow-scrolling: touch; }
@@ -17,6 +17,7 @@
   a:hover, a:active, a:visited, a:focus {
     text-decoration: none;
     outline: 0; }
+    .navbar,footer{background-color: #F2F2F2}
 .pos_rel{position: relative;}
 .visible-phone {
     display: none !important;
@@ -88,7 +89,20 @@ a:hover, a:active, a:visited, a:focus {
     margin: 0;
     cursor: pointer;
 }
-.active a span{border-bottom:4px solid #00A0DF;padding: 10px 20px 6px !important;}
+.primary-navigation ul li.active a span::after{    
+    bottom: 0;
+    content: "";    
+    height: 4px;
+    left: 0;    
+    position: absolute;
+    right: 0;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: all .2s ease-in;
+    background: #00A0DF;
+    display: block;
+    opacity: 1;
+}
 .primary-navigation{margin-left: 164px;}
 .header-title #mobile-menu-link {
     float: left;
@@ -184,7 +198,7 @@ a:hover, a:active, a:visited, a:focus {
 /* --------------------------------------------------------------------------------- */
 
 /* -------------------------------------Sub_Header---------------------------------- */
-.sub-header-wrapper {height: 50px;border-top: 1px solid #026D97;box-shadow: 0px 4px 9px 0px rgba(151,151,151,0.9);}
+.sub-header-wrapper {height: 50px;border-top: 1px solid #026D97;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);}
 .sub-header-wrapper .sub-page-navigation-horizontal ul {
     list-style: none;
     margin: 0 auto;
