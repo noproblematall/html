@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5233.963 2763.73 61.271 41.87">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #415364;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Group_944" data-name="Group 944" transform="translate(5234 2746.131)">
+    <g id="Group_819" data-name="Group 819" transform="translate(2 19.599)">
+      <g id="Group_818" data-name="Group 818" transform="translate(0.781 19.755)">
+        <line id="Line_468" data-name="Line 468" class="cls-1" x1="20.301" y2="17.022" transform="translate(0 0.156)"/>
+        <line id="Line_469" data-name="Line 469" class="cls-1" x2="20.536" y2="17.178" transform="translate(35.059)"/>
+      </g>
+      <path id="Path_2260" data-name="Path 2260" class="cls-2" d="M59.156,60.237a2.767,2.767,0,0,1-2.733,2.733H4.733A2.767,2.767,0,0,1,2,60.237v-32.4A2.767,2.767,0,0,1,4.733,25.1H56.5a2.767,2.767,0,0,1,2.733,2.733v32.4Z" transform="translate(-2 -25.1)"/>
+      <path id="Path_2261" data-name="Path 2261" class="cls-3" d="M58.932,26.527l-26.7,22.41a2.9,2.9,0,0,1-1.718.625,2.349,2.349,0,0,1-1.718-.625L2.4,26.762h0A2.782,2.782,0,0,1,4.9,25.2H56.667a2.594,2.594,0,0,1,2.264,1.327Z" transform="translate(-2.088 -25.122)"/>
+    </g>
+  </g>
+</svg>

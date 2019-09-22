@@ -1,0 +1,511 @@
+/* @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700); */
+@font-face{
+    font-family: Lato;
+    src: url(../../assets/fonts/Lato-Regular.ttf);
+}
+body {
+  font-size: 15px;
+  line-height: 1.3em;
+  font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+  color: #555759;
+  margin: 0;
+}
+header div,
+header h1,
+header a,
+header ul,
+header li,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+sup {
+  position: relative;
+  top: -5px;
+  font-size: .66em;
+}
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+a,
+.link-style {
+  color: #0066cc;
+  text-decoration: underline;
+}
+a:hover,
+a:focus,
+a:active {
+  cursor: pointer;
+  text-decoration: underline;
+}
+div,
+ul,
+li,
+td,
+th,
+caption,
+a,
+p {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.clearfix,
+.cf {
+  zoom: 1;
+}
+.clearfix:before,
+.cf:before {
+  content: '';
+  display: block;
+}
+.clearfix:after,
+.cf:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+.legal {
+  font-size: 12px;
+}
+.phone-number {
+  white-space: nowrap;
+}
+.furl-title {
+  cursor: pointer;
+}
+iframe {
+overflow:hidden;
+}
+.oyt  {
+float:right;
+padding:0 5px 5px 0;
+}
+.icon-link {
+  text-decoration: underline;
+  vertical-align: top;
+}
+.icon-link:hover,
+.icon-link:active,
+.icon-link:focus {
+  text-decoration: underline;
+  opacity: 0.8;
+  }
+.icon-link.arrow {
+  padding-right: 1em;
+}
+.icon-link.arrow::after {
+  content: " >";
+  position: relative;
+  left: 0.2em;
+  display: inline-block;
+  width: 0;
+}
+.icon-link.pdf {
+  padding-right: 15px;
+}
+.icon-link.pdf::after {
+  content: "";
+  background-image: url("../images/icon-pdf.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-pdf-bl.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: relative;
+  left: 5px;
+  top: 3px;
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  margin-right: -12px;
+}
+#deviceType {
+  display: none;
+  position: relative;
+}
+.icon-welcome {
+  background-image: url("../images/icon-welcome.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-welcome.svg");
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: left top;
+}
+.icon-mobile {
+  background-image: url("../images/icon-mobile.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-mobile.svg");
+  background-repeat: no-repeat;
+  padding-left: 55px;
+  background-position: left top;
+}
+.icon-arrows {
+  background-image: url("../images/icon-arrows.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-arrows.svg");
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: left top;
+}
+.icon-chart {
+  background-image: url("../images/icon-chart.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-chart.svg");   
+  background-repeat: no-repeat;
+  padding-left: 55px;
+  background-position: left top;
+}
+.icon-book {
+  background-image: url("../images/icon-book.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-book.svg");
+  background-repeat: no-repeat;
+  padding-left: 55px;
+  background-position: left top;
+}
+.icon-page {
+  background-image: url("../images/icon-page.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-page.svg");   
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  background-position: left top;
+}
+.icon-bank {
+  background-image: url("../images/icon-bank.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-bank.svg");
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  background-position: left top;
+}
+.icon-notes {
+  background-image: url("../images/icon-notes.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-notes.svg");   
+  background-repeat: no-repeat;
+  padding-left: 55px;
+  background-position: left top;
+}
+.icon-pin {
+  background: url("../images/icon-pin.png");
+  background: linear-gradient(transparent, transparent), url("../images/icon-pin.svg");
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: left top;
+}
+.overlay-container {position: relative;}
+.overlay-modal-bg {position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: url(../images/overlay-gray-out.png); z-index: 9999; display: none;}
+.overlayProx {border: 2px solid #EB0000; position: absolute; width: 501px; background-color: #fff; z-index: 10000; text-align: left; display: none;}
+.overlayHdln {background-color: #EB0000; color: #fff; font-size: 15px; line-height: 1.3em; padding: 8px 15px; min-height: 19px; margin: 0;}   
+.overlayClose {background: url(../images/overlay-sprite.png) no-repeat 110% 2px; color: #fff; padding-right: 22px; position: absolute; top: 9px; right: 10px; font-size: 12px; line-height: 1.4em;}
+.overlayClose:hover, .overlayClose:focus {cursor: pointer; text-decoration: underline;}
+.overlayContent {font-size: 12px; line-height: 1.2; padding: 20px; position: relative;}
+.overlayContent p {margin: .9em 0 .85em; padding: 0;}
+
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+@media (min-width: 480px) and (max-width: 967px) {
+  #deviceType {
+    z-index: 2;
+  }
+}
+h1 {
+  font-size: 65px;
+  color: #555759;
+  font-weight: lighter;
+  line-height: 1;
+  max-width:500px;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 2.5
+  
+}
+ h2 span.icon-welcome, h2 span.icon-book, h2 span.icon-chart {
+  line-height: 1.4; 
+}
+
+.site-wrapper {
+  max-width: 1280px;
+  min-width: 290px;
+  margin: 20px auto;
+}
+.site-inner-wrapper {
+  max-width: 967px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+header .site-inner-wrapper {
+  padding-bottom: 25px;
+}
+.logo {
+  background-image: url("../images/icon-morningstar-logo.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icon-morningstar-logo.svg");
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 38px;
+  display: inline-block;
+}
+.plan-title {
+  font-weight: bold;
+  color: #EB0000;
+  display: inline-block;
+  margin: 0;
+}
+.login-box {
+  float: right;
+  font-size: 0;
+}
+.btn  {
+   font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  background: #EB0000;
+  color: #fff;
+  cursor: pointer;
+  zoom: 1;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  width: auto;
+  margin:3px 0 0 5px;
+}
+.btn-register {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -khtml-border-radius: 15px;
+  height:38px;
+}
+.btn-register:hover, .btn-register:focus, .btn-register:active {
+  background: #BE0009;
+  text-decoration: none;
+}
+.photo {
+  padding: 20px 20px 0 20px;
+  background: url(../images/hero-image_final.jpg) no-repeat 50% 0%;
+}
+.photo .site-inner-wrapper {
+  min-height: 510px;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+.content-area {
+  margin-bottom: 0px;
+}
+.pdf-options > li {
+    color: #fff;
+}
+.pdf-options > li a {
+  color: #555759;
+}
+.pdf-options h2 {
+  padding: 12px 8px;
+  background-color: #EB0000;
+  min-height:44px;
+}
+.pdf-options h2 span {
+  display: block;
+  min-height: 40px;
+}
+.pdf-options h2:hover,
+.pdf-options h2:focus,
+.pdf-options h2:active {
+  background-color: #EB0000;
+}
+.pdf-options .furl-body {
+  padding: 12px 18px;
+  background-color: #ffffff;
+  opacity: 0.95;
+}
+.pdf-options .furl-body li {
+  margin: 15px 0;
+  font-size: 14px;
+  color:#555759;
+
+}
+@media  (min-width: 968px) {
+  .photo {
+        padding-top: 130px;
+  }
+  .text-content {
+    padding-top: 10px;
+    position:absolute;  }
+  .pdf-options {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .pdf-options > li {
+    display: inline-block;
+    width: 23%;
+    margin-right: 1%;
+    vertical-align: bottom;
+  }
+  .pdf-options > li:last-of-type {
+    margin-right: 0;
+  }
+.overlayProx  {
+  width:768px !important;
+}
+}
+@media  (max-width: 967px) {
+  h1 {
+    font-size: 60px;
+    max-width:300px;
+  }
+  .pdf-options > li {
+    margin: 15px 0;
+  }
+  .pdf-options .furl-body {
+    opacity: 1;
+  }  
+  .pdf-options .furl-body li {
+    margin: 25px 0;
+  }
+   h2 span.icon-welcome,  h2 span.icon-chart,  h2 span.icon-book {
+  line-height: 2.5; 
+  }
+}
+@media (min-width: 508px) and (max-width: 627px) {
+     h2 span.icon-book {
+  line-height: 1.4; 
+  }
+  }
+@media (min-width: 481px) and (max-width: 967px) {
+  .photo .site-inner-wrapper {
+    min-height: auto;
+  }
+  .pdf-options {
+    margin: 50px 0 0;
+    padding-top: 300px;
+  }
+    .text-content {
+    padding-top: 30px;
+    position:absolute;
+  }
+  .pdf-options > li {
+    margin: 0 0 10px 0;
+    width: 49%;
+    float: left;
+    position: relative;
+    min-height: 64px;
+  }
+  .pdf-options > li:nth-of-type(odd) {
+    margin-right: 2%;
+  }
+  .pdf-options .valign {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .overlayProx  {
+  width:460px !important;
+}
+}
+@media  (max-width: 768px) {
+  .plan-title {
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .photo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .photo .site-inner-wrapper {
+    min-height: auto;
+  }
+  .login-box {
+    float: none;
+    margin-top: 30px;
+  }
+  .login-box input,
+  .login-box .login-btn {
+    width: 32%;
+  }
+  .login-box input {
+    margin: 0 2% 10px 0;
+  }
+  .login-box p {
+    margin-left: 0;
+    display: block;
+    text-align: right;
+  }
+
+}
+@media (min-width: 481px) and (max-width: 508px) {
+  .pdf-options  {
+      padding-top:285px;
+    }
+  .pdf-options > li {
+    width: 90%;
+}
+}
+@media  (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    max-width:480px;
+  }
+.icon-welcome {
+  padding-left:55px;
+}
+    .photo {
+    background-image:none;
+    padding:0;
+  }
+  .img-content  {
+    padding:20px;
+  }
+  .photo::before {
+  height: 215px;
+  background: url(../images/hero-image_final.jpg) no-repeat;
+  background-size: cover;
+  padding:0;
+  }
+
+.pdf-options .furl-body {
+  background-color: #EFEFEF;
+}
+  .pdf-options > li {
+    margin: 10px 0;
+  }
+  .plan-title {
+    font-size: 12px;
+  }
+  .login-box input {
+    width: 49%;
+  }
+  .login-box input.last {
+    margin-right: 0;
+  }
+  .login-box .login-btn {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+}
