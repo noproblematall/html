@@ -6,7 +6,8 @@
   body {
     background: #fff;
     text-align: left;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'CharlesModern-Regular';
     -webkit-overflow-scrolling: touch; }
   
   h1 {
@@ -28,6 +29,7 @@
 .text-color-title{color:#026D97;}
 .resp_mt-100{margin-top:100px;}
 .d-flex{display:flex;}
+.section_title{font-size: 28px;color:#425563;}
 /* ----------------------------------Part_Header------------------------------------- */
 #header{background-color: #f2f2f2;padding-top:15px;}
 
@@ -279,7 +281,8 @@ section.account-changes {background-color: #f7f7f7;}
 .footer-navigation a{
     color:#026D97;
 }
-
+.footer-navigation{line-height: 40px;}
+.footer_map{background-color: #f7f7f7;}
 /* --------------------------------------------Safe_page-------------------------------------------- */
 .feature_sub_right{
     padding-left:30px;
