@@ -6,7 +6,8 @@
   body {
     background: #fff;
     text-align: left;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'CharlesModern-Regular';
     -webkit-overflow-scrolling: touch; }
   
   h1 {
