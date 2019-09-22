@@ -263,12 +263,42 @@ a:hover, a:active, a:visited, a:focus {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------Start_Manage_Account_Details-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 section.mad-delivery .mad-delivery-text p {width: 570px;}
+.mad-delivery p {line-height: 23px;}
 section.mad-delivery .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
 section.mad-delivery .mad-or p {margin-bottom: 0;}
 .mad-btn-custom {padding: 10px; background-color: #026d97;}
 .mad-width {width: 70%;margin: auto;}
+.mad-width-80 {width: 80%;margin: auto;}
+.mad-width-95 {width: 95%;margin: auto;}
+.mad-width-90 {width: 90%;margin: auto;}
+.bggrey {background-color: #f2f2f2;}
 
-section.account-changes {background-color: #f7f7f7;}
+.mad-account-changes {background-color: #f7f7f7;padding: 50px 0;}
+.mad-account-changes p {line-height: 22px;}
+.mad-active {background-color: white !important; color: #026d97 !important;}
+div.mad-nav ul {padding: 0; list-style-type: none;}
+div.mad-nav ul li {padding: 10px 20px;background-color: #026d97;border-top: 1px solid white; cursor: pointer;height: 70px;color: white;display: flex;justify-content: center;align-content: center; flex-direction: column;}
+div.mad-nav ul li span {}
+.mad-nav-content {padding: 50px 40px 10px;}
+.mad-account-changes .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
+.mad-account-changes .mad-or p {margin-bottom: 0;}
+
+.mad-moving-money {background-color: #fff;padding: 50px 0;}
+.mad-moving-money p {line-height: 22px;}
+.mad-grey-active {background-color: #f2f2f2 !important; color: #026d97 !important;}
+.mad-moving-money .mad-nav-content {padding-top:15px;}
+.mad-tab {border-bottom: 1px solid #979797;}
+.mad-tab ul {padding: 0; list-style-type: none;margin-bottom: 0}
+.mad-tab ul li {display: inline-block;padding: 10px 25px; cursor: pointer;}
+.mad-tab-active {border-bottom: 3px solid #00a0df;}
+.mad-moving-money div.mad-nav ul li {}
+
+.online-access p {line-height: 22px;margin-bottom: 26px;}
+
+.mobile-app .mad-iphone img {width: 200%;margin-left: -250px;margin-top: -40px;margin-bottom: -50px;}
+.mobile-app .app-store ul {list-style-type: none; padding: 0;}
+.mobile-app .app-store ul li {display: inline-block;}
+.mobile-app .mad-iphone-content {padding-left: 40px; padding-top: 90px;}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------End_Manage_Account_Details-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
