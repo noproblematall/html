@@ -260,9 +260,10 @@ a:hover, a:active, a:visited, a:focus {
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------Start_Manage_Account_Details-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
+.fixed-top + section {padding-top: 132px;}
 .display-none {display: none;}
 section.mad-delivery .mad-delivery-text p {width: 570px;}
 .mad-delivery p {line-height: 23px;}
