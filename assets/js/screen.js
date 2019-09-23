@@ -1,29 +1,37 @@
 $(document).ready(function(){
-    var flag = 1;
-    $(window).scroll(function () {
-        var temp = $(window).scrollTop();
-        if (temp > 63 && flag) {            
-            $("#header").addClass("fixed-top");            
-            flag = 0;
-        }
-        else
-        {
-            
-        }
-        if (temp < 70 ) {
-           
-            flag = 1;
-            $("#header").removeClass("fixed-top");  
-        }
-        
-        if(temp < 500 )
-        {
-            
-        }       
-    });
 
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    // Get the header
+    var header = document.getElementById("header");
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    // Add the fixed-top class to the header when you reach its scroll position. Remove "fixed-top" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("fixed-top");
+        } else {
+            header.classList.remove("fixed-top");
+        }
+    }
 
     // -----------------  JS for Manage-account-details -------------------------
+
+    $('.sub-page-navigation-horizontal ul li a').on('click', function(e){
+        if (this.hash !== "") {
+            e.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top-100
+            }, 800, function(){
+
+            });
+            
+        }
+
+    })
+
+
     $('.mad-account-changes .mad-nav ul li').click(function(){
         $('.mad-account-changes .mad-nav ul li').removeClass('mad-active');
         $(this).addClass('mad-active');
