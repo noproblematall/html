@@ -104,6 +104,28 @@ a:hover, a:active, a:visited, a:focus {
     display: block;
     opacity: 1;
 }
+.sub-page-navigation-horizontal ul li a span {
+    display:inline-block;
+    position: relative;
+    bottom: 0px;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+.sub-page-navigation-horizontal ul li.active a span::after{    
+    bottom: 0;
+    content: "";    
+    height: 4px;
+    left: 0;    
+    position: absolute;
+    right: 0;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: all .2s ease-in;
+    background: #00A0DF;
+    display: block;
+    opacity: 1;
+}
 .primary-navigation{margin-left: 164px;}
 .header-title #mobile-menu-link {
     float: left;
@@ -210,10 +232,10 @@ a:hover, a:active, a:visited, a:focus {
 .sub-header-wrapper .sub-page-navigation-horizontal ul li {
     list-style: none;
     display: inline-block;
-    line-height: 50px;
+    line-height: 30px;
     overflow: hidden;
-    margin-left: 54px;
-    margin-right: 54px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .sub-header-wrapper .sub-page-navigation-horizontal ul li a{
     color:#000000;
@@ -264,7 +286,7 @@ a:hover, a:active, a:visited, a:focus {
     scroll-behavior: smooth;
 } */
 .fixed-top + section {padding-top: 132px;}
-.active {border-bottom: 4px solid #00A0DF !important;}
+/* .active {border-bottom: 4px solid #00A0DF !important;} */
 .display-none {display: none;}
 section.mad-delivery .mad-delivery-text p {width: 570px;}
 .mad-delivery p {line-height: 23px;}
@@ -344,7 +366,7 @@ div.mad-nav ul li span {}
         width: 100%;
         padding: 40px 0px;
     }
-    .sub-header-wrapper .sub-page-navigation-horizontal ul li {margin-left: 30px;margin-right: 30px;}
+    .sub-header-wrapper .sub-page-navigation-horizontal ul li {margin-left: 10px;margin-right: 10px;}
 }
 
 @media(max-width:1000px)
@@ -355,6 +377,14 @@ div.mad-nav ul li span {}
     .container.normal_width{padding-left:0px;padding-right:0px;}
     .sub-header-wrapper .sub-page-navigation-horizontal ul li {margin-left: 15px;margin-right: 15px;}
     .sub-header-wrapper .sub-page-navigation-horizontal ul li span{font-size: 13px; }
+    .sub-page-navigation-horizontal ul li a span {
+        display: inline-block;
+        position: relative;
+        bottom: 0px;
+        padding: 10px 5px;
+        margin: 0;
+        cursor: pointer;
+    }
 }
 
 
@@ -406,13 +436,14 @@ div.mad-nav ul li span {}
     .visible-phone {
         display: inherit !important;
     }
-    #banner{
+    #banner.homepage{
         background: none;       
         width: 100%;
         height: auto;
         position: relative;  
         margin-bottom: -100px;      
     }
+    
     #banner .banner-mssg {
         position: relative !important;
         top: -110px;
