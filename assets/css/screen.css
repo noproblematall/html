@@ -265,6 +265,7 @@ a:hover, a:active, a:visited, a:focus {
     scroll-behavior: smooth;
 } */
 .fixed-top + section {padding-top: 132px;}
+.active {border-bottom: 4px solid #00A0DF !important;}
 .display-none {display: none;}
 section.mad-delivery .mad-delivery-text p {width: 570px;}
 .mad-delivery p {line-height: 23px;}
@@ -277,7 +278,7 @@ section.mad-delivery .mad-or p {margin-bottom: 0;}
 .mad-width-90 {width: 90%;margin: auto;}
 .bggrey {background-color: #f2f2f2;}
 
-.mad-account-changes {background-color: #f7f7f7;padding: 50px 0;}
+.mad-account-changes {background-color: #f7f7f7;}
 .mad-account-changes p {line-height: 22px;}
 .mad-active {background-color: white !important; color: #026d97 !important;cursor: default !important;}
 div.mad-nav ul {padding: 0; list-style-type: none;}
@@ -287,7 +288,7 @@ div.mad-nav ul li span {}
 .mad-account-changes .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
 .mad-account-changes .mad-or p {margin-bottom: 0;}
 
-.mad-moving-money {background-color: #fff;padding: 50px 0;}
+.mad-moving-money {background-color: #fff;}
 .mad-moving-money p {line-height: 22px;}
 .mad-grey-active {background-color: #f2f2f2 !important; color: #026d97 !important;cursor: default !important;}
 .mad-moving-money .mad-nav-content {padding-top:15px;}

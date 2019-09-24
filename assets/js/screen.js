@@ -1,18 +1,53 @@
 $(document).ready(function(){
-
+    let mad_delivery_pos = document.getElementById("mad-delivery").offsetTop;
+    let mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
+    let mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
+    let mad_online_access = document.getElementById("online-access").offsetTop;
+    let mad_mobile_app = document.getElementById("mobile-app").offsetTop;
+    let mad_statment = document.getElementById("mad-statment").offsetTop;
+    
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {stickNav(); setActive();};
     // Get the header
     var header = document.getElementById("header");
     // Get the offset position of the navbar
     var sticky = header.offsetTop;
     // Add the fixed-top class to the header when you reach its scroll position. Remove "fixed-top" when you leave the scroll position
-    function myFunction() {
+    function stickNav() {
         if (window.pageYOffset > sticky) {
             header.classList.add("fixed-top");
         } else {
             header.classList.remove("fixed-top");
         }
+    }
+    function setActive() {
+        mad_delivery_pos = document.getElementById("mad-delivery").offsetTop; 
+        mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
+        mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
+        mad_online_access = document.getElementById("online-access").offsetTop;
+        mad_mobile_app = document.getElementById("mobile-app").offsetTop;
+        mad_statment = document.getElementById("mad-statment").offsetTop;       
+        if(Math.abs(window.pageYOffset - mad_delivery_pos) <= 70 ){
+            $('.sub-page-navigation-horizontal ul li').removeClass('active');
+            $('#nav-delivery').addClass('active');            
+        }else if(Math.abs(window.pageYOffset - mad_account_changes_pos) <= 70 ){
+            $('.sub-page-navigation-horizontal ul li').removeClass('active');
+            $('#nav-account-changes').addClass('active');
+        }else if(Math.abs(window.pageYOffset - mad_moving_money) <= 70 ){
+            $('.sub-page-navigation-horizontal ul li').removeClass('active');
+            $('#nav-move-money').addClass('active');
+        }else if(Math.abs(window.pageYOffset - mad_online_access) <= 70 ){
+            $('.sub-page-navigation-horizontal ul li').removeClass('active');
+            $('#nav-online-access').addClass('active');
+        }else if(Math.abs(window.pageYOffset - mad_mobile_app) <= 70 ){
+            $('.sub-page-navigation-horizontal ul li').removeClass('active');
+            $('#nav-mobile-app').addClass('active');
+        }else if(Math.abs(window.pageYOffset - mad_statment) <= 70 ){
+            $('.sub-page-navigation-horizontal ul li').removeClass('active');
+            $('#nav-download-mobile-app').addClass('active');
+        }
+        
+        // console.log(mad_delivery_pos);
     }
 
     // -----------------  JS for Manage-account-details -------------------------
@@ -22,7 +57,7 @@ $(document).ready(function(){
             e.preventDefault();
             var hash = this.hash;
             $('html, body').animate({
-                scrollTop: $(hash).offset().top-100
+                scrollTop: $(hash).offset().top-90
             }, 800, function(){
 
             });
