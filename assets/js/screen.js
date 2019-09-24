@@ -1,10 +1,4 @@
-$(document).ready(function(){
-    let mad_delivery_pos = document.getElementById("mad-delivery").offsetTop;
-    let mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
-    let mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
-    let mad_online_access = document.getElementById("online-access").offsetTop;
-    let mad_mobile_app = document.getElementById("mobile-app").offsetTop;
-    let mad_statment = document.getElementById("mad-statment").offsetTop;
+$(document).ready(function(){    
     
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {stickNav(); setActive();};
@@ -57,7 +51,7 @@ $(document).ready(function(){
             e.preventDefault();
             var hash = this.hash;
             $('html, body').animate({
-                scrollTop: $(hash).offset().top-90
+                scrollTop: $(hash).offset().top-130
             }, 800, function(){
 
             });
