@@ -1,4 +1,4 @@
-$(document).ready(function(){    
+$(document).ready(function(){
     
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {stickNav(); setActive();};
@@ -21,27 +21,26 @@ $(document).ready(function(){
         mad_online_access = document.getElementById("online-access").offsetTop;
         mad_mobile_app = document.getElementById("mobile-app").offsetTop;
         mad_statment = document.getElementById("mad-statment").offsetTop;       
-        if(Math.abs(window.pageYOffset - mad_delivery_pos) <= 70 ){
+        if(Math.abs(window.pageYOffset - mad_delivery_pos) <= 150 ){
             $('.sub-page-navigation-horizontal ul li').removeClass('active');
             $('#nav-delivery').addClass('active');            
-        }else if(Math.abs(window.pageYOffset - mad_account_changes_pos) <= 70 ){
+        }else if(Math.abs(window.pageYOffset - mad_account_changes_pos) <= 150 ){
             $('.sub-page-navigation-horizontal ul li').removeClass('active');
             $('#nav-account-changes').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_moving_money) <= 70 ){
+        }else if(Math.abs(window.pageYOffset - mad_moving_money) <= 150 ){
             $('.sub-page-navigation-horizontal ul li').removeClass('active');
             $('#nav-move-money').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_online_access) <= 70 ){
+        }else if(Math.abs(window.pageYOffset - mad_online_access) <= 150 ){
             $('.sub-page-navigation-horizontal ul li').removeClass('active');
             $('#nav-online-access').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_mobile_app) <= 70 ){
+        }else if(Math.abs(window.pageYOffset - mad_mobile_app) <= 150 ){
             $('.sub-page-navigation-horizontal ul li').removeClass('active');
             $('#nav-mobile-app').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_statment) <= 70 ){
+        }else if(Math.abs(window.pageYOffset - mad_statment) <= 150 ){
             $('.sub-page-navigation-horizontal ul li').removeClass('active');
             $('#nav-download-mobile-app').addClass('active');
         }
         
-        // console.log(mad_delivery_pos);
     }
 
     // -----------------  JS for Manage-account-details -------------------------
@@ -59,8 +58,6 @@ $(document).ready(function(){
         }
 
     })
-
-
     $('.mad-account-changes .mad-nav ul li').click(function(){
         $('.mad-account-changes .mad-nav ul li').removeClass('mad-active');
         $(this).addClass('mad-active');
