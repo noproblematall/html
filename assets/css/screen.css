@@ -285,10 +285,12 @@ a:hover, a:active, a:visited, a:focus {
 /* html {
     scroll-behavior: smooth;
 } */
-
+.mad_img_v_1 {position: absolute;width: 1px; z-index: 0; left: 50%;}
+.pos_ab {position: absolute; left: calc(50% - 24px);}
 .mad-delivery {display: block;}
 .mad-delivery-mobile {display: none;}
 .mad-account-changes-mobile {display: none;}
+.mad-moving-money-mobile {display: none;}
 
 .banner_sub {background-color: #f2f2f2;}
 .fixed-top + section {padding-top: 132px;}
@@ -345,6 +347,9 @@ div.mad-nav ul li span {}
 
 /*--------------------- eDelivery for mobile --------------------- */
 .mad-delivery-mobile .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 0px 0;}
+
+.mad_custom_button a {padding: 10px 20px;background-color: #026d97;border-top: 1px solid white; cursor: pointer;height: 70px;color: white;display: flex;justify-content: center;align-content: center; flex-direction: column;}
+.mad_accordian .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 0px 0;}
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------End_Manage_Account_Details-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 
@@ -559,8 +564,13 @@ div.mad-nav ul li span {}
     .mad-delivery {display: none;}
     .mad-delivery-mobile {display: block;}
     .mad_img_delivery_v{top: 35px;height: 315px;}
+    .mad_img_delivery_v_1{top: 30px;height: 595px;}
+    .mad_img_moving_v_1{top: 27px;height: 358px;}
+    .mad_img_moving_v_2{top: 27px;height: 323px;}
     .mad-account-changes{display: none;}
     .mad-account-changes-mobile{display: block;}
+    .mad-moving-money {display: none;}
+    .mad-moving-money-mobile {display: block;}
 
     .app-store ul li img {width: 105px;}
     .app-store ul {text-align: center;}
@@ -574,8 +584,19 @@ div.mad-nav ul li span {}
     .normal_width .row .mb_padding{padding-left:0px;padding-right:0px;}
     .mobile-app .mad-iphone-content {padding-left: 15px;padding-right: 15px;padding-top: 0px;}
     section.mad-delivery .mad-delivery-text p {width: 100%;}
+    .mad_img_delivery_v_1{top: 35px;height: 613px;}
 }
 
+@media(max-width:500px)
+{
+    .mad_img_delivery_v_1{top: 35px;height: 595px;}
+}
+
+@media(max-width:450px)
+{
+    .mad_img_delivery_v{top: 35px;height: 334px;}
+    .mad_img_delivery_v_1{top: 35px;height: 674px;}
+}
 @media(max-width:400px)
 {
     .mad_img_delivery_v{top: 35px;height: 350px;}
