@@ -165,6 +165,14 @@ $(document).ready(function(){
 
 
 
+    // ---------- Get Started ------------------------------
+    $('#ftr-open-account .mad-tab ul li').click(function(){
+        $('#ftr-open-account .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#ftr-open-account .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
     // ----------------------------------------- sub_menu --------------------------------------------
 
     $( window ).resize(function() {
