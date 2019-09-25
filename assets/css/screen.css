@@ -31,7 +31,7 @@
 .d-flex{display:flex;}
 .section_title{font-size: 28px;color:#425563;}
 /* ----------------------------------Part_Header------------------------------------- */
-#header{background-color: #f2f2f2;padding-top:15px;}
+#header{background-color: #f2f2f2;}
 
 .navbar{padding:0px;}
 .header-title {
@@ -131,13 +131,15 @@ a:hover, a:active, a:visited, a:focus {
     float: left;
     width: 63px;
     height: 63px;
-    background: #555555;
+    background: transparent;
     text-align: center;
     display: none;
     margin: 0;
     z-index: 2000;
     *z-index: 2000;
     border-radius: 0px;
+    box-shadow: none;
+    outline: none;
 }
 .collapse:not(.show) {
     display: block;
@@ -148,7 +150,7 @@ a:hover, a:active, a:visited, a:focus {
     display: inline-block;
     vertical-align: middle;
     margin-top: 0px;
-    background: url(../img/clc_sprites.png) -34px 0 no-repeat;
+    background: url(../img/mobile_btn.png) no-repeat;
 }
 #banner.homepage{
     background: url(../img/banner.png) no-repeat center center;
@@ -204,7 +206,7 @@ a:hover, a:active, a:visited, a:focus {
     text-decoration: none;
 }
 .banner-mssg p{line-height: 30px;}
-
+#mobile-submenu-link{border:none;background:none; position: absolute;right: 0px;top: 10px;}
 /* ---------------------------------End_Header-------------------------------------- */
 
 /* ---------------------------------Home_Sub_Feature-------------------------------- */
@@ -560,6 +562,8 @@ div.mad-nav ul li span {}
         margin: 0 auto;
         padding: 0;
         width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #f2f2f2;
     }
     .sub-header-wrapper .sub-page-navigation-horizontal ul li {        
         margin-left:0px;
@@ -642,6 +646,13 @@ div.mad-nav ul li span {}
     .ftr_img_moving_v_1{top:25px;height:624px;}
     .mad_img_moving_v_2{top:25px;height:824px;}
     .ftr_img_moving_v_2{top:25px;height:905px;}
+    .banner_sub_img {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .submenuResponsive{
+        position: relative;
+    }
 }
 
 @media(max-width:600px)
