@@ -359,6 +359,9 @@ div.mad-nav ul li span {}
 .ftr_img_tab_paper{top: 150px;left: 97px;width: 726px;}
 .ftr_img_transfer{top: 150px;left: 105px;width: 787px;}
 
+#ftr-open-account-mobile{display: none;}
+#ftr-transfer-assets-mobile{display: none;}
+
 
 /* ------------------------------------------------------------------------------------------------------ */
 .footer-navigation a{
@@ -630,6 +633,15 @@ div.mad-nav ul li span {}
         display: block;
     }
     /* -------------------------------------------------------------------------------- */
+
+    /* --------------------- FTR Open Account ------------------------- */
+    #ftr-open-account-mobile{display: block;}
+    #ftr-open-account{display: none;}
+    #ftr-transfer-assets-mobile{display: block;}
+    #ftr-transfer-assets{display: none;}
+    .ftr_img_moving_v_1{top:25px;height:624px;}
+    .mad_img_moving_v_2{top:25px;height:824px;}
+    .ftr_img_moving_v_2{top:25px;height:905px;}
 }
 
 @media(max-width:600px)
@@ -651,8 +663,11 @@ div.mad-nav ul li span {}
 {
     .mad_img_delivery_v{top: 35px;height: 334px;}
     .mad_img_delivery_v_1{top: 35px;height: 674px;}
+    .ftr_img_moving_v_2{top:25px;height:1005px;}
 }
 @media(max-width:400px)
 {
     .mad_img_delivery_v{top: 35px;height: 350px;}
+    .ftr_img_moving_v_1{top:25px;height:700px;}
+    .mad_img_moving_v_2{top:25px;height:872px;}
 }

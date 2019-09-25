@@ -162,6 +162,7 @@ $(document).ready(function(){
         $('#mad-schwab-moneylink-mobile-content .mad-tab-content').addClass('display-none');
         $('#'+target+'-content').removeClass('display-none');
     })
+    
 
 
 
@@ -171,6 +172,13 @@ $(document).ready(function(){
         $(this).addClass('mad-tab-active');
         let target = $(this).attr('id');
         $('#ftr-open-account .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#ftr-open-account-mobile .mad-tab ul li').click(function(){
+        $('#ftr-open-account-mobile .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#ftr-open-account-mobile .mad-tab-content').addClass('display-none');
         $('#'+target+'-content').removeClass('display-none');
     })
     // ----------------------------------------- sub_menu --------------------------------------------
