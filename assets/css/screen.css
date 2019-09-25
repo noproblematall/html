@@ -390,9 +390,16 @@ div.mad-nav ul li span {}
         width: 100%;
         padding: 40px 0px;
     }
+    .sub-header-wrapper .sub-page-navigation-horizontal ul li {
+        list-style: none;
+        display: inline-block;
+        line-height: 30px;
+        overflow: hidden;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-    /* ----------------------------MAD----------------------------- */
-    .sub-header-wrapper .sub-page-navigation-horizontal ul li {margin-left: 30px;margin-right: 30px;}
+    /* ----------------------------MAD----------------------------- */    
     .mad-nav-content {padding: 20px 30px 10px;}
     .mad-btn-custom {font-size: 14px;}
     div.mad-nav ul li {font-size: 14px; height: 60px;}
@@ -407,9 +414,7 @@ div.mad-nav ul li span {}
     }
 
     /* -----------------------MAD---------------------------- */
-    .container.normal_width{padding-left:0px;padding-right:0px;}
-    .sub-header-wrapper .sub-page-navigation-horizontal ul li {margin-left: 15px;margin-right: 15px;}
-    .sub-header-wrapper .sub-page-navigation-horizontal ul li span{font-size: 13px; }
+    .container.normal_width{padding-left:0px;padding-right:0px;}    
     .banner-text h2 {font-size: 28px;}
     /* .fixed-top + section {margin-bottom: 67px;}     */
     .app-store ul li img {width: 110px;}
@@ -571,14 +576,11 @@ div.mad-nav ul li span {}
     .mad-account-changes-mobile{display: block;}
     .mad-moving-money {display: none;}
     .mad-moving-money-mobile {display: block;}
-
     .app-store ul li img {width: 105px;}
     .app-store ul {text-align: center;}
     .mobile-app .mad-iphone img {padding-left: 30px;}
-    .primary-navigation ul li.active a span::after {
-        
-        background: transparent;
-        
+    .primary-navigation ul li.active a span::after {        
+        background: transparent;        
     }
 }
 
