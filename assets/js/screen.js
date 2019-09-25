@@ -56,8 +56,8 @@ $(document).ready(function(){
             });
             
         }
-
     })
+// Javascript for Desktop ----------------------
     $('.mad-account-changes .mad-nav ul li').click(function(){
         $('.mad-account-changes .mad-nav ul li').removeClass('mad-active');
         $(this).addClass('mad-active');
@@ -91,6 +91,64 @@ $(document).ready(function(){
         $(this).addClass('mad-tab-active');
         let target = $(this).attr('id');
         $('#mad-request-check-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#mad-deposit-check-content .mad-tab ul li').click(function(){
+        $('#mad-deposit-check-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-deposit-check-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#mad-schwab-moneylink-content .mad-tab ul li').click(function(){
+        $('#mad-schwab-moneylink-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-schwab-moneylink-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    // Javascript for Mobile -----------------------------
+    $('.mad-account-changes-mobile .mad_accordian .mad_custom_button a').click(function(){
+        $('.mad-account-changes-mobile .mad_accordian .mad_custom_button a').removeClass('mad-active');
+        $(this).addClass('mad-active');
+    })
+    $('.mad-moving-money-mobile .mad_accordian .mad_custom_button a').click(function(){
+        $('.mad-moving-money-mobile .mad_accordian .mad_custom_button a').removeClass('mad-grey-active');
+        $(this).addClass('mad-grey-active');
+    })
+    $('#mad-transfer-wire-mobile-content .mad-tab ul li').click(function(){
+        $('#mad-transfer-wire-mobile-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-transfer-wire-mobile-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#mad-schwab-accounts-mobile-content .mad-tab ul li').click(function(){
+        $('#mad-schwab-accounts-mobile-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-schwab-accounts-mobile-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#mad-request-check-mobile-content .mad-tab ul li').click(function(){
+        $('#mad-request-check-mobile-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-request-check-mobile-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#mad-deposit-check-mobile-content .mad-tab ul li').click(function(){
+        $('#mad-deposit-check-mobile-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-deposit-check-mobile-content .mad-tab-content').addClass('display-none');
+        $('#'+target+'-content').removeClass('display-none');
+    })
+    $('#mad-schwab-moneylink-mobile-content .mad-tab ul li').click(function(){
+        $('#mad-schwab-moneylink-mobile-content .mad-tab ul li').removeClass('mad-tab-active');
+        $(this).addClass('mad-tab-active');
+        let target = $(this).attr('id');
+        $('#mad-schwab-moneylink-mobile-content .mad-tab-content').addClass('display-none');
         $('#'+target+'-content').removeClass('display-none');
     })
 });
