@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {stickNav(); setActive();};
+    window.onscroll = function() {stickNav(); setActive();setSubmenu();};
     // Get the header
     var header = document.getElementById("header");
     // Get the offset position of the navbar
@@ -12,6 +12,15 @@ $(document).ready(function(){
             header.classList.add("fixed-top");
         } else {
             header.classList.remove("fixed-top");
+        }
+    }
+    function setSubmenu() {
+        if ($(window).width() < 767) {            
+            $(".sub-page-navigation-horizontal").addClass("submenuResponsive");
+        }
+        else
+        {
+            $(".sub-page-navigation-horizontal").removeClass("submenuResponsive");
         }
     }
     function setActive() {
@@ -42,6 +51,8 @@ $(document).ready(function(){
         }
         
     }
+
+
 
     // -----------------  JS for Manage-account-details -------------------------
 
@@ -162,4 +173,18 @@ $(document).ready(function(){
         $('#ftr-open-account .mad-tab-content').addClass('display-none');
         $('#'+target+'-content').removeClass('display-none');
     })
+    // ----------------------------------------- sub_menu --------------------------------------------
+
+    $( window ).resize(function() {
+        if ($(window).width() < 767) {            
+            $(".sub-page-navigation-horizontal").addClass("submenuResponsive");
+        }
+        else
+        {
+            $(".sub-page-navigation-horizontal").removeClass("submenuResponsive");
+        }
+    });
+    $(document).on('click','.submenuResponsive ul li',function(){
+        $(this).find('ul').slideDown();
+    });    
 });
