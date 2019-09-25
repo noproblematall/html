@@ -1,8 +1,35 @@
 $(document).ready(function(){
+    var window_width = $(window).width();
+    var submenu_flag = 0;
+    var init_hash = location.hash;
+    if(init_hash != ''){
+        if(init_hash == '#mad-delivery'){
+            $('html, body').animate({
+                scrollTop: $(init_hash).offset().top-130
+            }, 200, function(){
+
+            }); 
+        }else{
+
+            $('html, body').animate({
+                scrollTop: $(init_hash).offset().top-90
+            }, 200, function(){
+
+            });
+        }
+    }
     setSubmenu();
     var page_name = $('#page_name').val();
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {stickNav(); setActive();};
+    window.onscroll = function() {
+        stickNav(); 
+        setActive();
+        if(window_width < 767){
+            $(".submenuResponsive ul li").css('display', 'none');
+            $(".submenuResponsive ul li.active").css('display', 'block');
+            submenu_flag=0;
+        }
+    };
     // Get the header
     var header = document.getElementById("header");
     // Get the offset position of the navbar
@@ -11,17 +38,23 @@ $(document).ready(function(){
     function stickNav() {
         if (window.pageYOffset > sticky) {
             header.classList.add("fixed-top");
+            
         } else {
             header.classList.remove("fixed-top");
         }
     }
     function setSubmenu() {
+        window_width = $(window).width();
         if ($(window).width() < 767) {            
-            $(".sub-page-navigation-horizontal").addClass("submenuResponsive");
+            $(".sub-page-navigation-horizontal").addClass("submenuResponsive");            
+            $(".sub-page-navigation-horizontal ul li").css("display", "none");
+            $(".sub-page-navigation-horizontal ul li.active").css("display", "block");
         }
         else
         {
             $(".sub-page-navigation-horizontal").removeClass("submenuResponsive");
+            $(".sub-page-navigation-horizontal ul li").css("display", "inline-block");
+
         }
     }
     function setActive() {
@@ -88,15 +121,46 @@ $(document).ready(function(){
     // -----------------  JS for Manage-account-details -------------------------
 
     $('.sub-page-navigation-horizontal ul li a').on('click', function(e){
-        if (this.hash !== "") {
-            e.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top-90
-            }, 800, function(){
-
-            });
-            
+        if(window_width < 767){
+            if (this.hash !== "") {
+                e.preventDefault();
+                var hash = this.hash;
+                if(hash == '#mad-delivery'){
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-100
+                    }, 600, function(){
+        
+                    }); 
+                }else{
+    
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-50
+                    }, 600, function(){
+        
+                    });
+                }
+                
+            }
+        }else{
+            if (this.hash !== "") {
+                e.preventDefault();
+                var hash = this.hash;
+                if(hash == '#mad-delivery'){
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-130
+                    }, 600, function(){
+        
+                    }); 
+                }else{
+    
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-90
+                    }, 600, function(){
+        
+                    });
+                }
+                
+            }
         }
     })
 // Javascript for Desktop ----------------------
@@ -215,15 +279,18 @@ $(document).ready(function(){
     // ----------------------------------------- sub_menu --------------------------------------------
 
     $( window ).resize(function() {
-        if ($(window).width() < 767) {            
-            $(".sub-page-navigation-horizontal").addClass("submenuResponsive");
-        }
-        else
-        {
-            $(".sub-page-navigation-horizontal").removeClass("submenuResponsive");
-        }
+        setSubmenu();
     });
-    $(document).on('click','.submenuResponsive ul li',function(){
-        $(".submenuResponsive ul li").slideDown();
+    
+    $(document).on('click','#mobile-submenu-link',function(){
+        if(!submenu_flag){
+            $(".submenuResponsive ul li").slideDown();
+            submenu_flag=1;
+        }else{
+            $(".submenuResponsive ul li").slideUp('fast',function () {
+                $(".submenuResponsive ul li.active").css('display', 'block');
+            });
+            submenu_flag=0;
+        }
     });    
 });
