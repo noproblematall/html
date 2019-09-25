@@ -533,7 +533,7 @@ div.mad-nav ul li span {}
     .primary-navigation ul li a span {
         display: inline-block;
         position: relative;
-        bottom: 10px;
+        bottom: 20px;
         padding: 10px 20px;
         margin: 0;
         cursor: pointer;
@@ -552,7 +552,7 @@ div.mad-nav ul li span {}
         margin-right:10px;
     }
     .mb_show{display: block;}
-    .pc_show{display: none;}
+    .pc_show{display: none !important;}
     .banner-text .p-t-40{padding-top:0px;}
     /* -------------------------------Sub_safe-------------------------------- */
     .feature_sub_right {
@@ -575,6 +575,11 @@ div.mad-nav ul li span {}
     .app-store ul li img {width: 105px;}
     .app-store ul {text-align: center;}
     .mobile-app .mad-iphone img {padding-left: 30px;}
+    .primary-navigation ul li.active a span::after {
+        
+        background: transparent;
+        
+    }
 }
 
 @media(max-width:600px)
