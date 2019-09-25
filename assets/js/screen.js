@@ -150,12 +150,12 @@ $(document).ready(function(){
         $('#'+target+'-content').removeClass('display-none');
     })
     // Javascript for Mobile -----------------------------
-    $('.mad-account-changes-mobile .mad_accordian .mad_custom_button a').click(function(){
-        $('.mad-account-changes-mobile .mad_accordian .mad_custom_button a').removeClass('mad-active');
+    $('#mad-account-changes-mobile .mad_accordian .mad_custom_button a').click(function(){
+        $('#mad-account-changes-mobile .mad_accordian .mad_custom_button a').removeClass('mad-active');
         $(this).addClass('mad-active');
     })
-    $('.mad-moving-money-mobile .mad_accordian .mad_custom_button a').click(function(){
-        $('.mad-moving-money-mobile .mad_accordian .mad_custom_button a').removeClass('mad-grey-active');
+    $('#mad-moving-money-mobile .mad_accordian .mad_custom_button a').click(function(){
+        $('#mad-moving-money-mobile .mad_accordian .mad_custom_button a').removeClass('mad-grey-active');
         $(this).addClass('mad-grey-active');
     })
     $('#mad-transfer-wire-mobile-content .mad-tab ul li').click(function(){
@@ -224,6 +224,6 @@ $(document).ready(function(){
         }
     });
     $(document).on('click','.submenuResponsive ul li',function(){
-        // $(".submenuResponsive ul li").slideDown();
+        $(".submenuResponsive ul li").slideDown();
     });    
 });

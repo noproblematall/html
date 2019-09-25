@@ -299,10 +299,10 @@ a:hover, a:active, a:visited, a:focus {
 } */
 .mad_img_v_1 {position: absolute;width: 1px; z-index: 0; left: 50%;}
 .pos_ab {position: absolute; left: calc(50% - 24px);}
-.mad-delivery {display: block;}
-.mad-delivery-mobile {display: none;}
-.mad-account-changes-mobile {display: none;}
-.mad-moving-money-mobile {display: none;}
+
+#mad-delivery-mobile {display: none;}
+#mad-account-changes-mobile {display: none;}
+#mad-moving-money-mobile {display: none;}
 
 .banner_sub {background-color: #f2f2f2;}
 .fixed-top + section {padding-top: 132px;}
@@ -591,16 +591,16 @@ div.mad-nav ul li span {}
     }
     .mad-btn-custom {font-size: 1rem;width: 100%;}
     /* -------------------------- MAD --------------------------------- */
-    .mad-delivery {display: none;}
-    .mad-delivery-mobile {display: block;}
+    #mad-delivery-desktop {display: none;}
+    #mad-delivery-mobile {display: block;}
     .mad_img_delivery_v{top: 35px;height: 315px;}
     .mad_img_delivery_v_1{top: 30px;height: 595px;}
     .mad_img_moving_v_1{top: 27px;height: 402px;}
     .mad_img_moving_v_2{top: 27px;height: 323px;}
-    .mad-account-changes{display: none;}
-    .mad-account-changes-mobile{display: block;}
-    .mad-moving-money {display: none;}
-    .mad-moving-money-mobile {display: block;}
+    #mad-account-changes-desktop{display: none;}
+    #mad-account-changes-mobile{display: block;}
+    #mad-moving-money-desktop {display: none;}
+    #mad-moving-money-mobile {display: block;}
     .app-store ul li img {width: 105px;}
     .app-store ul {text-align: center;}
     .mobile-app .mad-iphone img {padding-left: 30px;}
@@ -651,9 +651,9 @@ div.mad-nav ul li span {}
 
     /* --------------------- FTR Open Account ------------------------- */
     #ftr-open-account-mobile{display: block;}
-    #ftr-open-account{display: none;}
+    #ftr-open-account-desktop{display: none;}
     #ftr-transfer-assets-mobile{display: block;}
-    #ftr-transfer-assets{display: none;}
+    #ftr-transfer-assets-desktop{display: none;}
     .ftr_img_moving_v_1{top:25px;height:624px;}
     .mad_img_moving_v_2{top:25px;height:824px;}
     .ftr_img_moving_v_2{top:25px;height:905px;}
