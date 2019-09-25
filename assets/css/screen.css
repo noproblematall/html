@@ -606,6 +606,7 @@ div.mad-nav ul li span {}
     .mad_img_moving_v_1{top: 27px;height: 397px;}
     .mad_img_moving_v_1_2{top: 27px;height: 330px;}
     .mad_img_moving_v_2{top: 27px;height: 323px;}
+    .mad_img_moving_v_3{top: 27px;height: 323px;}
     #mad-account-changes-desktop{display: none;}
     #mad-account-changes-mobile{display: block;}
     #mad-moving-money-desktop {display: none;}
@@ -713,7 +714,8 @@ div.mad-nav ul li span {}
     .mad_img_delivery_v_1{top: 35px;height: 734px;}
     .mad_img_delivery_v{top: 35px;height: 350px;}
     .ftr_img_moving_v_1{top:25px;height:700px;}
-    .mad_img_moving_v_2{top:25px;height:872px;}
+    .mad_img_moving_v_2{top:25px;height:370px;}
+    .mad_img_moving_v_3{top: 25px; height: 353px}
     .mad_img_delivery_v_3{top: 30px;height: 673px;}
 
     .mad_img_moving_v_1{top: 27px;height: 459px;}

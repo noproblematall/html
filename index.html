@@ -21,6 +21,11 @@
         var waPageName = document.location.pathname;
         var waUseDefaultPageName = true;
     </script>    
+    <style>
+            .fixed-top + section {
+                padding-top: 0 !important;
+            }
+    </style>
 </head>
 
 <body class="index" id="schwab_clc">
@@ -141,6 +146,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        window.onscroll = function(){
+            stickNav();
+        }
+        // Get the header
+        var header = document.getElementById("header");
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        // Add the fixed-top class to the header when you reach its scroll position. Remove "fixed-top" when you leave the scroll position
+        function stickNav() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("fixed-top");
+                
+            } else {
+                header.classList.remove("fixed-top");
+            }
+        }
+    </script>
 </body>
 
 </html>
