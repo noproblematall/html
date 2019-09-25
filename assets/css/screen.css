@@ -32,7 +32,7 @@
 .section_title{font-size: 28px;color:#425563;}
 .icon_pdf{width:22px;height: 30px;}
 /* ----------------------------------Part_Header------------------------------------- */
-#header{background-color: #f2f2f2;}
+#header{background-color: #f2f2f2;margin-bottom: 4px;}
 
 .navbar{padding:0px;}
 .header-title {
@@ -291,6 +291,7 @@ a:hover, a:active, a:visited, a:focus {
     border-radius: 25px;
 }
 .feature-wrapper-img {height:85px;}
+.get_started_footer{margin-top:-40px;}
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------End_Get_Started-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 
