@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    
+    setSubmenu();
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {stickNav(); setActive();setSubmenu();};
+    window.onscroll = function() {stickNav(); setActive();};
     // Get the header
     var header = document.getElementById("header");
     // Get the offset position of the navbar
@@ -185,6 +185,6 @@ $(document).ready(function(){
         }
     });
     $(document).on('click','.submenuResponsive ul li',function(){
-        $(".submenuResponsive ul li").slideDown();
+        // $(".submenuResponsive ul li").slideDown();
     });    
 });

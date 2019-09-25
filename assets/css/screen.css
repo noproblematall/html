@@ -14,7 +14,7 @@
     font-family: 'CharlesModern-Regular';
     font-size: 32px;
     color: #026D97; }
-  
+  a{color:#026D97;}
   a:hover, a:active, a:visited, a:focus {
     text-decoration: none;
     outline: 0; }
@@ -190,7 +190,7 @@ a:hover, a:active, a:visited, a:focus {
 .feature-btn {
     position: absolute;
     display: block;
-    bottom: 40px;
+    bottom: 25px;
     left: 30px;
     width: 136px;
     height: 44px;
@@ -199,14 +199,24 @@ a:hover, a:active, a:visited, a:focus {
     padding: 0 20px;
     background: #ffffff;
     font-size: 18px;
-    font-family: 'CharlesModern-Regular';
-    font-weight: normal;
+    font-family: 'CharlesModern-Regular';    
     line-height: 44px;
     border: 1px solid #707070;
     text-decoration: none;
+    text-shadow: none;
+    font-weight: 600;
+}
+.link_track{
+    color: #026D97;    
+    background: #ffffff;    
+    font-family: 'CharlesModern-Regular';    
+    line-height: 44px;    
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 500;
 }
 .banner-mssg p{line-height: 30px;}
-#mobile-submenu-link{border:none;background:none; position: absolute;right: 0px;top: 10px;}
+#mobile-submenu-link{border:none;background:none; position: absolute;right: 0px;top: 10px;display: none;}
 /* ---------------------------------End_Header-------------------------------------- */
 
 /* ---------------------------------Home_Sub_Feature-------------------------------- */
@@ -312,7 +322,8 @@ section.mad-delivery .mad-delivery-text p {width: 570px;}
 .mad-delivery p {line-height: 23px;}
 section.mad-delivery .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
 section.mad-delivery .mad-or p {margin-bottom: 0;}
-.mad-btn-custom {padding: 10px; background-color: #026d97;}
+.mad-btn-custom {padding: 10px; background-color: #026d97;border: none;border-radius: 0;}
+.mad-btn-custom:hover {background-color: #0579a7;}
 .mad-width {width: 70%;margin: auto;}
 .mad-width-80 {width: 80%;margin: auto;}
 .mad-width-95 {width: 95%;margin: auto;}
@@ -640,6 +651,11 @@ div.mad-nav ul li span {}
     }
     .submenuResponsive{
         position: relative;
+    }
+    #mobile-submenu-link{
+        display: inline-block;
+        box-shadow: none;
+        outline: none;
     }
 }
 
