@@ -31,6 +31,7 @@
 .d-flex{display:flex;}
 .section_title{font-size: 28px;color:#425563;}
 .icon_pdf{width:22px;height: 30px;}
+.icon_attach{height:20px;}
 /* ----------------------------------Part_Header------------------------------------- */
 #header{background-color: #f2f2f2;margin-bottom: 4px;}
 
