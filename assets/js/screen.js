@@ -177,6 +177,6 @@ $(document).ready(function(){
         }
     });
     $(document).on('click','.submenuResponsive ul li',function(){
-        $(this).find('ul').slideDown();
+        $(".submenuResponsive ul li").slideDown();
     });    
 });
