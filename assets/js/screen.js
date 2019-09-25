@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    var page_name = $('#page_name').val();
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {stickNav(); setActive();setSubmenu();};
     // Get the header
@@ -24,30 +24,60 @@ $(document).ready(function(){
         }
     }
     function setActive() {
-        mad_delivery_pos = document.getElementById("mad-delivery").offsetTop; 
-        mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
-        mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
-        mad_online_access = document.getElementById("online-access").offsetTop;
-        mad_mobile_app = document.getElementById("mobile-app").offsetTop;
-        mad_statment = document.getElementById("mad-statment").offsetTop;       
-        if(Math.abs(window.pageYOffset - mad_delivery_pos) <= 150 ){
-            $('.sub-page-navigation-horizontal ul li').removeClass('active');
-            $('#nav-delivery').addClass('active');            
-        }else if(Math.abs(window.pageYOffset - mad_account_changes_pos) <= 150 ){
-            $('.sub-page-navigation-horizontal ul li').removeClass('active');
-            $('#nav-account-changes').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_moving_money) <= 150 ){
-            $('.sub-page-navigation-horizontal ul li').removeClass('active');
-            $('#nav-move-money').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_online_access) <= 150 ){
-            $('.sub-page-navigation-horizontal ul li').removeClass('active');
-            $('#nav-online-access').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_mobile_app) <= 150 ){
-            $('.sub-page-navigation-horizontal ul li').removeClass('active');
-            $('#nav-mobile-app').addClass('active');
-        }else if(Math.abs(window.pageYOffset - mad_statment) <= 150 ){
-            $('.sub-page-navigation-horizontal ul li').removeClass('active');
-            $('#nav-download-mobile-app').addClass('active');
+        if(page_name == 'manage_account_details'){
+            mad_delivery_pos = document.getElementById("mad-delivery").offsetTop; 
+            mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
+            mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
+            mad_online_access = document.getElementById("online-access").offsetTop;
+            mad_mobile_app = document.getElementById("mobile-app").offsetTop;
+            mad_statment = document.getElementById("mad-statment").offsetTop;       
+            if(Math.abs(window.pageYOffset - mad_delivery_pos) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-delivery').addClass('active');            
+            }else if(Math.abs(window.pageYOffset - mad_account_changes_pos) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-account-changes').addClass('active');
+            }else if(Math.abs(window.pageYOffset - mad_moving_money) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-move-money').addClass('active');
+            }else if(Math.abs(window.pageYOffset - mad_online_access) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-online-access').addClass('active');
+            }else if(Math.abs(window.pageYOffset - mad_mobile_app) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-mobile-app').addClass('active');
+            }else if(Math.abs(window.pageYOffset - mad_statment) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-download-mobile-app').addClass('active');
+            }
+        }else if(page_name == 'get_started'){
+            ftr_open_account = document.getElementById("ftr-open-account").offsetTop;
+            ftr_transfer_assets = document.getElementById("ftr-transfer-assets").offsetTop;
+            ftr_online_access = document.getElementById("online-access").offsetTop;
+            ftr_mobile_app = document.getElementById("mobile-app").offsetTop;
+            if(Math.abs(window.pageYOffset - ftr_open_account) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-open-account').addClass('active');            
+            }else if(Math.abs(window.pageYOffset - ftr_transfer_assets) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-transfer-assets').addClass('active');
+            }else if(Math.abs(window.pageYOffset - ftr_online_access) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-signup-online-access').addClass('active');
+            }else if(Math.abs(window.pageYOffset - ftr_mobile_app) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-download-mobile-app').addClass('active');
+            }
+        }else if(page_name == 'schwab_role'){
+            ftr_you_advisor_schwab = document.getElementById("ftr-you-advisor-schwab").offsetTop;
+            ftr_schwab_protects_assets = document.getElementById("ftr-schwab-protects-assets").offsetTop;
+            if(Math.abs(window.pageYOffset - ftr_you_advisor_schwab) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-open-account').addClass('active');            
+            }else if(Math.abs(window.pageYOffset - ftr_schwab_protects_assets) <= 150 ){
+                $('.sub-page-navigation-horizontal ul li').removeClass('active');
+                $('#nav-transfer-assets').addClass('active');
+            }
         }
         
     }
@@ -61,7 +91,7 @@ $(document).ready(function(){
             e.preventDefault();
             var hash = this.hash;
             $('html, body').animate({
-                scrollTop: $(hash).offset().top-130
+                scrollTop: $(hash).offset().top-90
             }, 800, function(){
 
             });

@@ -26,6 +26,7 @@
 </head>
 
 <body class="index" id="schwab_clc">
+    <input type="hidden" id="page_name" value="manage_account_details">
     <nav class="navbar navbar-expand-lg navbar-dark static-top p-b-25">
         <div class="container header-title">
             <a class="navbar-brand header-logo" target="_blank" href="http://www.schwaballiance.com/"></a>
@@ -2021,13 +2022,14 @@
 
     <script>
         $(document).ready(function(){
-            let mad_delivery_pos = document.getElementById("mad-delivery").offsetTop;
-            let mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
-            let mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
-            let mad_online_access = document.getElementById("online-access").offsetTop;
-            let mad_mobile_app = document.getElementById("mobile-app").offsetTop;
-            let mad_statment = document.getElementById("mad-statment").offsetTop;
+            var mad_delivery_pos = document.getElementById("mad-delivery").offsetTop;
+            var mad_account_changes_pos = document.getElementById("mad-account-changes").offsetTop;
+            var mad_moving_money = document.getElementById("mad-moving-money").offsetTop;
+            var mad_online_access = document.getElementById("online-access").offsetTop;
+            var mad_mobile_app = document.getElementById("mobile-app").offsetTop;
+            var mad_statment = document.getElementById("mad-statment").offsetTop;
         })
+        
     </script>
 </body>
 

@@ -26,6 +26,7 @@
 </head>
 
 <body class="index" id="schwab_clc">
+    <input type="hidden" id="page_name" value="get_started">
     <nav class="navbar navbar-expand-lg navbar-dark static-top p-b-25">
         <div class="container header-title">
             <a class="navbar-brand header-logo" target="_blank" href="http://www.schwaballiance.com/"></a>
@@ -57,8 +58,8 @@
                     <ul>
                         <li id="nav-open-account" class="active"><a href="#ftr-open-account"><span>Open an Account</span></a></li>
                         <li id="nav-transfer-assets"><a href="#ftr-transfer-assets"><span>Transfer Assets</span></a></li>
-                        <li id="nav-signup-online-access"><a href="#ftr-signup-online-access"><span>Online Access</span></a></li>
-                        <li class="last" id="nav-download-mobile-app"><a href="#ftr-download-mobile-app"><span>Mobile App</span></a></li>
+                        <li id="nav-signup-online-access"><a href="#online-access"><span>Online Access</span></a></li>
+                        <li class="last" id="nav-download-mobile-app"><a href="#mobile-app"><span>Mobile App</span></a></li>
                     </ul>
                 </div>                
             </div>
@@ -623,6 +624,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+            var ftr_open_account = document.getElementById("ftr-open-account").offsetTop;
+            var ftr_transfer_assets = document.getElementById("ftr-transfer-assets").offsetTop;
+            var ftr_online_access = document.getElementById("online-access").offsetTop;
+            var ftr_mobile_app = document.getElementById("mobile-app").offsetTop;
+        })
+    
+    </script>
 </body>
 
 </html>
