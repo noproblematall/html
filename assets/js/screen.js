@@ -30,6 +30,23 @@ $(document).ready(function(){
             submenu_flag=0;
         }
     };
+
+    // ------ Video Code ----------
+
+    $('#video_trigger').click(function(){
+        $("#video_modal").modal({backdrop: "static"});
+    })
+
+    $("#video_modal").on('shown.bs.modal', function(){
+        document.getElementById('my_video').play();
+    });
+    $("#video_modal").on('hidden.bs.modal', function(){
+        document.getElementById('my_video').pause();
+    });
+
+    // ------------------------------
+
+
     // Get the header
     var header = document.getElementById("header");
     // Get the offset position of the navbar
@@ -116,7 +133,12 @@ $(document).ready(function(){
         
     }
 
-
+    $('.tooltipa').tooltipster({
+        content: $('#tooltip_content'),
+        // if you use a single element as content for several tooltips, set this option to true
+        contentCloning: false,
+        theme: ['tooltipster-shadow', 'tooltipster-shadow-customized']
+    });
 
     // -----------------  JS for Manage-account-details -------------------------
 
