@@ -133,7 +133,12 @@ $(document).ready(function(){
         
     }
 
-
+    $('.tooltipa').tooltipster({
+        content: $('#tooltip_content'),
+        // if you use a single element as content for several tooltips, set this option to true
+        contentCloning: false,
+        theme: ['tooltipster-shadow', 'tooltipster-shadow-customized']
+    });
 
     // -----------------  JS for Manage-account-details -------------------------
 
