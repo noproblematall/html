@@ -717,6 +717,10 @@ div.mad-nav ul li span {}
     .mad_img_moving_v_2{top:25px;height:370px;}
     .mad_img_moving_v_3{top: 25px; height: 353px}
     .mad_img_delivery_v_3{top: 30px;height: 673px;}
-
+    .ftr_img_moving_v_3 {top: 25px;height: 1040px;}
     .mad_img_moving_v_1{top: 27px;height: 459px;}
+}
+@media(max-width:369px) 
+{
+    .ftr_img_moving_v_3 {top: 25px;height: 1084px;}
 }
