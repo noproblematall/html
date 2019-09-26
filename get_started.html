@@ -544,7 +544,7 @@
                 </div>
                 <div class="col-12 col-md-6 m-t-10">
                     <div class="banner_sub_img">
-                        <img src="./assets/img/Beacon-Component-Video-Video-Poster-Medium-Image.png" alt="">
+                        <img id="video_trigger" src="./assets/img/Beacon-Component-Video-Video-Poster-Medium-Image.png" alt="">
                     </div>
                 </div>
             </div>
@@ -558,6 +558,26 @@
             </div>
         </div>
     </section>
+
+
+    <!-- The Video Modal -->
+    <div class="modal fade" id="video_modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <video controls style="width: 100%;" id="my_video">
+                        <source src="./assets/video/Schwab_Alliance_Demo_Final.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
 
 
     <section class="mobile-app bggrey" id="mobile-app">

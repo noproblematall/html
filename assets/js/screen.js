@@ -30,6 +30,23 @@ $(document).ready(function(){
             submenu_flag=0;
         }
     };
+
+    // ------ Video Code ----------
+
+    $('#video_trigger').click(function(){
+        $("#video_modal").modal({backdrop: "static"});
+    })
+
+    $("#video_modal").on('shown.bs.modal', function(){
+        document.getElementById('my_video').play();
+    });
+    $("#video_modal").on('hidden.bs.modal', function(){
+        document.getElementById('my_video').pause();
+    });
+
+    // ------------------------------
+
+
     // Get the header
     var header = document.getElementById("header");
     // Get the offset position of the navbar

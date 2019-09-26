@@ -302,6 +302,8 @@ a:hover, a:active, a:visited, a:focus {
 /* html {
     scroll-behavior: smooth;
 } */
+#video_trigger {cursor: pointer !important;}
+.modal-header {border-bottom: none;}
 #header {position: relative;}
 .fixed-top {position: fixed !important;}
 /* .sub_menu_absolute {position: absolute;z-index: 2;} */
@@ -345,7 +347,8 @@ div.mad-nav ul {padding: 0; list-style-type: none;}
 div.mad-nav ul li {padding: 10px 20px;background-color: #026d97;border-top: 1px solid white; cursor: pointer;height: 70px;color: white;display: flex;justify-content: center;align-content: center; flex-direction: column;}
 div.mad-nav ul li span {}
 .mad-nav-content {padding: 50px 40px 10px;}
-.mad-account-changes .mad-or {width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
+.mad-account-changes .mad-or{width: 80%; background-color: #f2f2f2; padding: 20px 0 5px 0;}
+.mad-moving-money .mad-or {width: 80%; background-color: #fff; height: 50px; padding: 20px 0 5px 0;}
 .mad-account-changes .mad-or p {margin-bottom: 0;}
 
 .mad-moving-money {background-color: #fff;}
@@ -379,6 +382,7 @@ div.mad-nav ul li span {}
 .ftr_img_tab_electronic{top: 150px;left: 140px;width: 643px;}
 .ftr_img_tab_paper{top: 150px;left: 97px;width: 726px;}
 .ftr_img_transfer{top: 150px;left: 105px;width: 787px;}
+.mad_img_tab_schwab{top: 150px;left: 130px;width: 410px;}
 
 #ftr-open-account-mobile{display: none;}
 #ftr-transfer-assets-mobile{display: none;}
@@ -473,6 +477,7 @@ div.mad-nav ul li span {}
     .ftr_img_tab_electronic{top: 150px;left: 136px;width: 413px;}
     .ftr_img_tab_paper{top: 150px;left: 97px;width: 490px;}
     .ftr_img_transfer{top: 150px;left: 105px;width: 539px;}
+    .mad_img_tab_schwab{top: 150px;left: 60px;width: 316px;}
 }
 
 
@@ -610,6 +615,7 @@ div.mad-nav ul li span {}
     .mad_img_moving_v_1_2{top: 27px;height: 330px;}
     .mad_img_moving_v_2{top: 27px;height: 323px;}
     .mad_img_moving_v_3{top: 27px;height: 323px;}
+    .mad_img_moving_v_4{top: 27px;height: 638px;}
     #mad-account-changes-desktop{display: none;}
     #mad-account-changes-mobile{display: block;}
     #mad-moving-money-desktop {display: none;}
@@ -721,6 +727,7 @@ div.mad-nav ul li span {}
         height: 700px;
     }
     .ftr_img_moving_v_3{top:25px;height:1005px;}
+    .mad_img_moving_v_4{top: 27px;height: 680px;}
 }
 @media(max-width:400px)
 {
@@ -754,4 +761,5 @@ div.mad-nav ul li span {}
 @media(max-width:369px) 
 {
     .ftr_img_moving_v_3 {top: 25px;height: 1084px;}
+    .mad_img_moving_v_4{top: 27px;height: 724px;}
 }
