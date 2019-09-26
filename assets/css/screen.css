@@ -31,6 +31,9 @@
 .d-flex{display:flex;}
 .section_title{font-size: 28px;color:#425563;}
 .icon_pdf{width:22px;height: 30px;}
+.icon_attach{height:20px;}
+.lh-30{line-height: 30px;}
+.btn_icon_attach{padding:0px;border:none;background:transparent;outline:none !important;box-shadow: none;}
 /* ----------------------------------Part_Header------------------------------------- */
 #header{background-color: #f2f2f2;margin-bottom: 4px;}
 
@@ -193,7 +196,7 @@ a:hover, a:active, a:visited, a:focus {
     display: block;
     bottom: 25px;
     left: 30px;
-    width: 136px;
+    width: 140px;
     height: 44px;
     color: #026D97;
     margin: 0;
@@ -209,7 +212,7 @@ a:hover, a:active, a:visited, a:focus {
 }
 .link_track{
     color: #026D97;    
-    background: #ffffff;    
+    background: transparent;    
     font-family: 'CharlesModern-Regular';    
     line-height: 44px;    
     text-decoration: none;
@@ -680,6 +683,7 @@ div.mad-nav ul li span {}
         box-shadow: none;
         outline: none;
     }
+    .feature_sub_left {padding-right: 0px;}
 }
 
 @media(max-width:600px)
@@ -690,6 +694,15 @@ div.mad-nav ul li span {}
     .mobile-app .mad-iphone-content {padding-left: 15px;padding-right: 15px;padding-top: 0px;}
     section.mad-delivery .mad-delivery-text p {width: 100%;}
     .mad_img_delivery_v_1{top: 35px;height: 623px;}
+    .banner_sub {position: relative;min-height: 230px;}
+    .primary-navigation ul li a span {
+        display: inline-block;
+        position: relative;
+        bottom: 20px;
+        padding: 10px 0px;
+        margin: 0;
+        cursor: pointer;
+    }
 }
 
 @media(max-width:500px)
@@ -719,6 +732,24 @@ div.mad-nav ul li span {}
     .mad_img_delivery_v_3{top: 30px;height: 673px;}
     .ftr_img_moving_v_3 {top: 25px;height: 1040px;}
     .mad_img_moving_v_1{top: 27px;height: 459px;}
+    .header-title h1 {
+        font-size: 18px;margin-left: 68px;
+    }
+    .header-title #mobile-menu-link {
+        float: left;
+        width: 50px;
+        height: 40px;
+        background: transparent;
+        text-align: center;
+    }
+    .header-title #mobile-menu-link .icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0px;
+        background: url(../img/mobile_btn.png) no-repeat;
+    }
 }
 @media(max-width:369px) 
 {
