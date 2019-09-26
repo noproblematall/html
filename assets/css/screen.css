@@ -34,6 +34,13 @@
 .icon_attach{height:20px;}
 .lh-30{line-height: 30px;}
 .btn_icon_attach{padding:0px;border:none;background:transparent;outline:none !important;box-shadow: none;}
+.tooltip_templates { display: none; }
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
+	background: red;
+	border: 3px solid red;
+	border-radius: 6px;
+	box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);
+}
 /* ----------------------------------Part_Header------------------------------------- */
 #header{background-color: #f2f2f2;margin-bottom: 4px;}
 
