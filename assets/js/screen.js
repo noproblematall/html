@@ -46,6 +46,7 @@ $(document).ready(function(){
 
     // ------------------------------
 
+    
 
     // Get the header
     var header = document.getElementById("header");
